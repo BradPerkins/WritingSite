@@ -52,11 +52,16 @@
     margin: 5px 0;
   }
   #main-area .contents {
-    padding: 100px 0px 60px 0px;
+    padding: 80px 0px 30px 0px;
   }
   #main-area .contents .head-title {
     font-size: 22px;
   }
+
+  #main-area .contents .script-font {
+    font-size: 16px;
+  }
+
   #main-area .contents h5 {
     font-size: 32px;
   }

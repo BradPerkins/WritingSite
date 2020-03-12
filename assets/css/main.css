@@ -9,14 +9,13 @@ html {
 
 body {
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
-  color: #666;
   line-height: 25px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -38,12 +37,23 @@ h1, h2, h3, h4 {
   padding-top: 12px;
 }
 
+.portfolio-font-logline {
+  font-family: "Special Elite", sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .portfolio-category-font {
   font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   color: #fff;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -56,6 +66,59 @@ h1, h2, h3, h4 {
 }
 
 .portfolio-section-padding {
+  padding: 20px 0;
+}
+
+
+/* -----RESUME------ */
+
+
+
+.resume-section-title{
+  font-family: "Source Sans Pro", sans-serif;
+  color: #666;
+  font-style: normal;
+  margin-top: 0px;
+  font-size: 42px;
+  text-align: center;
+}
+
+.resume-section-padding {
+  padding: 20px 0;
+}
+
+.resume-section-bg{
+  padding: 20px;
+  /* background: url(../img/bodybg.jpg) no-repeat; */
+  background: linear-gradient( rgba(255, 254, 254, 0.9), rgba(255, 254, 254, 0.9) ), url(../img/bodybg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.contact-section-bg{
+  padding: 20px;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/benchbg.jpg); */
+  background-size: cover;
+}
+
+.timelin-title{
+  color: #666;
+  font-size: 32px;
+}
+
+.line-text{
+  color: #666;
+  font-size: 16px;
+}
+
+.resume-line-title{
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  font-size: 24px;
+}
+
+
+.video {
   padding: 20px 0;
 }
 
@@ -127,7 +190,7 @@ ul li, ol li {
 
 .section-title-header p {
   text: center;
-  font-weight: 400;
+  font-weight: 00;
   line-height: 26px;
   padding-bottom: 36px;
 }
@@ -143,6 +206,19 @@ ul li, ol li {
   padding: 0 10px;
   position: relative;
 }
+
+.section-title-white {
+  color: #fff;
+  /* font-family: 'Special Elite', cursive; */
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 48px;
+  padding: 0 10px;
+  position: relative;
+}
+
 
 .btn {
   font-size: 14px;
@@ -173,14 +249,31 @@ ul li, ol li {
   z-index: 1;
 }
 
+.btn-common-resume {
+  background-color: #B20000;
+  margin-top: 20px;
+  position: center;
+  z-index: 1;
+}
+
 .btn-common:hover {
-  color: #B20000;
+  /* color: #B20000;
   background-color: #fff;
   border-color: #B20000;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out; */
+
+  color: #fff;
+  background-color: #B20000;
+  border-color: #B20000;
+  padding: 15px 40px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
+
 }
 
 .btn-danger:hover {
@@ -204,6 +297,11 @@ ul li, ol li {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.btn-contact-layout{
+  display: inline-block;
+  margin: 5px;
+}
+
 .btn-lg {
   padding: 14px 33px;
   text-transform: uppercase;
@@ -222,6 +320,7 @@ button:focus {
 .icon-close, .icon-check {
   color: #B20000;
 }
+
 
 .social-icon li {
   display: inline-block;
@@ -263,6 +362,52 @@ button:focus {
 .social-icon li .imdb:hover {
   background: #B20000;
 }
+
+/* LinkedIn resumeIcon */
+.social-icon-linkedin li {
+  display: inline-block;
+}
+
+.social-icon-linkedin li a {
+  color: #fff;
+  background: #B20000;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 16px;
+  margin: 15px 6px 12px 6px;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.social-icon-linkedin li a:hover {
+  color: #fff;
+}
+
+.social-icon-linkedin li .linkedin-res:hover {
+  background: #B20000;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 48px;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 16px;
+  margin: 15px 6px 12px 6px;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+
+
 
 /* ScrollToTop */
 a.back-to-top {
@@ -317,7 +462,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .section-padding {
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 
@@ -328,7 +473,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .profile-wrapper {
-  padding: 45px 0;
+  padding: 5px 0;
 }
 
 .profile-wrapper .btn {
@@ -338,6 +483,10 @@ a.back-to-top:hover, a.back-to-top:focus {
 .profile-wrapper .btn i {
   vertical-align: middle;
   margin-right: 5px;
+}
+
+.about-title{
+
 }
 
 .about-profile {
@@ -642,7 +791,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #main-area .contents {
-  padding: 175px 0px 120px;
+  padding: 120px 0px 60px;
 }
 
 #main-area .contents h5 {
@@ -651,14 +800,14 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #main-area .contents .head-title {
   color: #fff;
-  font-size: 80px;
+  font-size: 40px;
   letter-spacing: 10px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 #main-area .contents p {
-  font-size: 30px;
+  font-size: 16px;
   color: #fff;
   font-weight: 400;
   line-height: 30px;
@@ -691,7 +840,10 @@ a.back-to-top:hover, a.back-to-top:focus {
   Portfolio Section
    ========================================================================== */
 #portfolios {
-  background: #333;
+  /* background: #333; */
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/bodybg.jpg);
+  background-size: cover;
+
 }
 
 #portfolios .mix {
@@ -700,6 +852,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #portfolios .portfolio-item .shot-item {
   margin: 0px;
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) );
+
 }
 
 #portfolio .mix {
@@ -821,8 +975,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 ---------FORM STUFF-------------------------------- */
 .form-control {
   width: 100%;
-  margin-bottom: 20px;
-  font-size: 14px;
+  margin-bottom: 10px;
+  font-size: 16px;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -840,15 +994,47 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   opacity: 1;
 }
 
+.center-cont {
+  margin: auto;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  right: 0px;
+}
+
+.contact-section{
+  background: #333;
+}
+
 .contact-form-area {
-  background: #fff;
-  box-shadow: 0 0 30px #ededed;
-  padding: 60px 40px;
+  /* background: #fff; */
+  background: linear-gradient( rgba(255, 254, 254, 0.9), rgba(255, 254, 254, 0.9) ), url(../img/bodybg.jpg) no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px #ededed;
+  padding: 10px 40px;
 }
 
 .contact-form-area h2 {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
+}
+
+.img-contact {
+  
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-right-contact {
@@ -857,8 +1043,15 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   margin-top: 30px;
 }
 
+.footer-right-contact-lower {
+  border: 1px solid #e1e1e1;
+  margin-top: 20px;
+}
+
 .footer-right-contact .single-contact {
-  margin: 10px 22px;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-bottom: 10px;
   padding: 3px 55px;
   position: relative;
   color: #666;
@@ -870,6 +1063,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .footer-right-contact .single-contact p a {
   color: #666;
+  
 }
 
 .footer-right-contact .contact-icon {
@@ -898,7 +1092,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .text-danger {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 10px;
 }
 
@@ -921,10 +1115,16 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 /* Footer Area Start */
 .footer-area {
   background: #1C1C20;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/bodybg.jpg); */
+}
+
+.blurred-bg {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/bodybg.jpg) no-repeat;
+  background-size: cover;
 }
 
 .footer-area .footer-text p {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 20px;
   color: #fff;
 }
@@ -959,7 +1159,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .footer-2 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   line-height: 20px;
   margin: 0;
@@ -968,7 +1168,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .footer-2 ul li a {
   color: #fff;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
 }
 
